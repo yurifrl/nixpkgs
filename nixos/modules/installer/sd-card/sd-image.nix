@@ -170,7 +170,7 @@ in
 
     sdImage.storePaths = [ config.system.build.toplevel ];
 
-    system.build.sdImage = pkgs.callPackage ({ stdenv, dosfstools, e2fsprogs,
+    system.build.sdImage = pkgs.callPackage ({ stdenv, dosfstools, btrfs-progs,
     mtools, libfaketime, util-linux, zstd }: stdenv.mkDerivation {
       name = config.sdImage.imageName;
 
