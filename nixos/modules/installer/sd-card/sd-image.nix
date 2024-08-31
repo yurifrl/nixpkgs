@@ -28,7 +28,7 @@ in
 {
   imports = [
     (mkRemovedOptionModule [ "sdImage" "bootPartitionID" ] "The FAT partition for SD image now only holds the Raspberry Pi firmware files. Use firmwarePartitionID to configure that partition's ID.")
-    (mkRemovedOptionModule [ "sdImage" "bootSize" ] "The boot files for SD image have been moved to the main ext4 partition. The FAT partition now only holds the Raspberry Pi firmware files. Changing its size may not be required.")
+    (mkRemovedOptionModule [ "sdImage" "bootSize" ] "The boot files for SD image have been moved to the main  partition. The FAT partition now only holds the Raspberry Pi firmware files. Changing its size may not be required.")
     ../../profiles/all-hardware.nix
   ];
 
@@ -164,7 +164,7 @@ in
       };
       "/" = {
         device = "/dev/disk/by-label/NIXOS_SD";
-        fsType = "ext4";
+        fsType = "btrfs";
       };
     };
 
