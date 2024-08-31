@@ -174,7 +174,7 @@ in
     mtools, libfaketime, util-linux, zstd }: stdenv.mkDerivation {
       name = config.sdImage.imageName;
 
-      nativeBuildInputs = [ dosfstools e2fsprogs libfaketime mtools util-linux ]
+      nativeBuildInputs = [ dosfstools btrfs-progs libfaketime mtools util-linux ]
       ++ lib.optional config.sdImage.compressImage zstd;
 
       inherit (config.sdImage) imageName compressImage;
@@ -268,7 +268,7 @@ in
         # Resize the root partition and the filesystem to fit the disk
         echo ",+," | sfdisk -N$partNum --no-reread $bootDevice
         ${pkgs.parted}/bin/partprobe
-        ${pkgs.e2fsprogs}/bin/resize2fs $rootPart
+        ${pkgs.btrfs-progs}/bin/resize2fs $rootPart
 
         # Register the contents of the initial Nix store
         ${config.nix.package.out}/bin/nix-store --load-db < /nix-path-registration
