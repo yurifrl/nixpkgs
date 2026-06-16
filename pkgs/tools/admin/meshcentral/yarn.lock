@@ -7855,10 +7855,10 @@ node-xcs@0.1.7:
     "@xmpp/client" "^0.9.2"
     "@xmpp/debug" "^0.9.2"
 
-nodemailer@6.9.8:
-  version "6.9.8"
-  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.8.tgz#29601e80440f2af7aa62b32758fdac7c6b784143"
-  integrity sha512-cfrYUk16e67Ks051i4CntM9kshRYei1/o/Gi8K1d+R34OIs21xdFnW7Pt7EucmVKA0LKtqUGNcjMZ7ehjl49mQ==
+nodemailer@8.0.9:
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-8.0.9.tgz#9ea0bdb84b04b1ee65d83b15aa7d62761e9b5677"
+  integrity sha512-5ofa7BUN8+C+Hckh5V2GjeeOGRQBx0CJQA6KxrvuZfC8iU4/q7sLn8XrtEEhJkjV6HdyIiQs7Bba6bTao8JhkA==
 
 nofilter@^1.0.4:
   version "1.0.4"
