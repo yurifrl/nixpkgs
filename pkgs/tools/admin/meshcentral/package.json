@@ -103,7 +103,7 @@
     "saslprep": "1.0.3",
     "pg": "8.7.1",
     "pgtools": "0.3.2",
-    "mariadb": "3.2.2",
+    "mariadb": "3.5.3",
     "acebase": "1.29.5",
     "sqlite3": "5.1.6",
     "node-vault": "0.10.2",
