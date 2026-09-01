@@ -97,7 +97,7 @@
     "image-size": "1.0.2",
     "acme-client": "4.2.5",
     "aedes": "0.39.0",
-    "mysql2": "3.6.2",
+    "mysql2": "3.22.0",
     "@mysql/xdevapi": "8.0.33",
     "mongodb": "4.13.0",
     "saslprep": "1.0.3",
